@@ -11,7 +11,7 @@
         android:id="@+id/wv"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1" />
+        android:layout_weight="6" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,51 +21,67 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:orientation="horizontal" >
+            android:orientation="horizontal">
 
             <EditText
                 android:id="@+id/et1"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="numberSigned"
-                android:text="enter a" />
+                android:hint="enter a"
+                android:inputType="numberSigned" />
 
             <EditText
                 android:id="@+id/et2"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="numberSigned"
-                android:text="enter b" />
+                android:hint="enter b"
+                android:inputType="numberSigned" />
 
             <EditText
                 android:id="@+id/et3"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:ems="10"
-                android:inputType="numberSigned"
-                android:text="enter c" />
+                android:hint="enter c"
+                android:inputType="numberSigned" />
+
         </LinearLayout>
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btn"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:id="@+id/btn1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="load"
             android:text="start" />
 
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="restart"
+            android:text="new" />
     </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4" />
 
 </LinearLayout>
